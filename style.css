@@ -1,0 +1,246 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url(/image/ff70aa18-cc23-49e8-a7f1-526ace56f56f.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.all{
+    background-color: #174c77;
+    box-shadow: #174c77 0px 0px 10px 10px;
+    min-height: 80vh;
+    width: 50vw;
+    border: solid white 2px;
+    border-radius: 40px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+hr{
+    border: #e8e8e8 solid 2px;
+}
+
+#div2{
+    display: flex;
+}
+
+.forFixed{
+    position: fixed;
+}
+
+.function{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #174c77;
+    margin-bottom: 20px;
+}
+
+
+#labelRemove{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.create{
+    background-color: #e8e8e8;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #323232;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.create:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#todo{
+    outline-color: #e8e8e8;
+    border-color: white;
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#todo:focus{
+    outline-color: #e8e8e8;
+}
+
+#todoList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divList{
+    display: flex;
+    align-items: center;  
+    margin-bottom: 10px;
+    border:solid 2px #ffffff;
+    border-radius: 20px;
+    background-color: #e8e8e8;
+    padding: 6px;
+    max-width: 90%;
+    height: auto;
+    min-width: 500px;
+}
+
+#checkList{
+    cursor: pointer;
+}
+
+#pDisplay{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    word-wrap: break-word;
+    max-width: 450px;
+    padding-left: 4px;
+}
+
+#spanImage img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#spanImage{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#spanImage:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.divForCheck{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.newDiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/*RESPONSIVIDADE*/ 
+
+@media(max-width: 1150px){
+    .function{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1050px){
+    .all{
+        width: 70vw;
+    }
+    .divList{
+        min-width:280px ;
+    }
+    #pDisplay{
+        max-width: 230px;
+    }
+}
+
+@media(max-width: 470px){
+    .all{
+        width: 70vw;
+    }
+    #labelRemove{
+        font-size: 25px;
+    }
+    #todo{
+        max-width: 220px;
+        font-size: 20px;
+    }
+    .create{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .divList{
+        min-width:200px ;
+    }
+    #pDisplay{
+        font-size: 15px;
+        max-width: 120px;
+    }
+    #checkList{
+        width: 30px;
+    }
+    #spanImage img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 350px){
+    h1{
+        font-size: 35px;
+    }
+    #labelRemove{
+        font-size: 20px;
+    }
+    #todo{
+        max-width: 160px;
+        font-size: 18px;
+    }
+    .create{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .divList{
+        min-width:175px ;
+    }
+    #pDisplay{
+        font-size: 15px;
+        max-width: 100px;
+    }
+    #checkList{
+        width: 30px;
+    }
+    #spanImage img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
